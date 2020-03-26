@@ -5,11 +5,12 @@ def prime?(num)
     array.each do |i|
       if num % i == 0
         return false
-      else
-        return true
+        break
+    else
+      return true
       end
     end
   else
-    return false
+    return false #if number is less than or equal to 1 it is not prime
   end
 end
