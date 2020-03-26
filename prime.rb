@@ -4,12 +4,12 @@ def prime?(num)
   if num > 1
     array.each do |i|
       if num % i == 0
-        false
+        return false
       else
-        true
+        return true
       end
     end
   else
-    false
+    return false
   end
 end
