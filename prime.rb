@@ -6,9 +6,9 @@ def prime?(num)
       if num % i == 0
         return false
         break
+      end
     else
       return true
-      end
     end
   else
     return false #if number is less than or equal to 1 it is not prime
